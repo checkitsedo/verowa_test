@@ -385,33 +385,20 @@ return [
 			'exclude' => true,
 			'label' => 'Rooms',
 			'config' => [
-				'type' => 'select',
-				'renderType' => 'selectMultipleSideBySide',
+				'type' => 'group',
+				'allowed' => 'tx_verowatest_domain_model_room',
 				'foreign_table' => 'tx_verowatest_domain_model_room',
-				'foreign_table_where' => 'ORDER BY id',
-				'MM' => 'tx_verowatest_event_room_mm',
 				'size' => 5,
 				'minitems' => 0,
 				'maxitems' => 100,
 				'default' => 0,
+				'MM' => 'tx_verowatest_event_room_mm',
+				'behaviour' => [
+					'allowLanguageSynchronization' => true,
+				],
 				'fieldControl' => [
 					'addRecord' => [
 						'disabled' => false,
-					],
-				],
-			],
-			'external' => [
-				0 => [
-					'field' => 'id',
-					'multipleRows' => true,
-					'multipleSorting' => 'position',
-					'transformations' => [
-						10 => [
-							'mapping' => [
-								'table' => 'tx_verowatest_domain_model_room',
-								'referenceField' => 'id'
-							],
-						],
 					],
 				],
 			],
