@@ -33,7 +33,7 @@ return [
 					],
 				],
 				'data' => 'array',
-				'arrayPath' => 'organizer',
+				'arrayPath' => 'organists',
 				'referenceUid' => 'person_id',
 				'group' => 'stjoseftest',
 				'priority' => 10,
