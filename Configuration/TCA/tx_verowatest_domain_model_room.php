@@ -33,7 +33,7 @@ return [
 					],
 				],
 				'data' => 'array',
-				'arrayPath' => 'rooms',
+				'arrayPath' => 'rooms/*',
 				'referenceUid' => 'id',
 				'group' => 'stjoseftest',
 				'priority' => 10,
