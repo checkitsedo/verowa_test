@@ -33,7 +33,7 @@ return [
 					],
 				],
 				'data' => 'array',
-				'referenceUid' => 'id',
+				'referenceUid' => 'room_id',
 				'group' => 'stjoseftest',
 				'priority' => 10,
 				'description' => 'Import of all events from Verowa'
@@ -133,7 +133,7 @@ return [
 			],
 			'external' => [
 				0 => [
-					'field' => 'id'
+					'field' => 'room_id'
 				],
 			],
 		],
@@ -193,7 +193,7 @@ return [
 			],
 			'external' => [
 				0 => [
-					'field' => 'location_postcode'
+					'field' => 'postcode'
 				],
 			],
 		],
@@ -208,7 +208,7 @@ return [
 			],
 			'external' => [
 				0 => [
-					'field' => 'location_city'
+					'field' => 'city'
 				],
 			],
 		],
@@ -223,7 +223,7 @@ return [
 			],
 			'external' => [
 				0 => [
-					'field' => 'name'
+					'field' => 'room_name'
 				],
 			],
 		],
