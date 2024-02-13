@@ -12,7 +12,7 @@ CREATE TABLE tx_verowatest_domain_model_event (
   short_desc varchar(1024) NOT NULL DEFAULT '',
   long_desc mediumtext,
   organizer int(11) unsigned COMMENT '1:n => person.id',
-  coorganizers int(11) unsigned NOT NULL DEFAULT 0 COMMENT 'coorganizers (persons) count',
+  organists int(11) unsigned NOT NULL DEFAULT 0 COMMENT 'coorganizers (persons) count',
   subs_date int(11) unsigned NOT NULL,
   subs_text varchar(255) NOT NULL DEFAULT '',
   subs_person_id int(11) unsigned COMMENT '1:n => person.id',
