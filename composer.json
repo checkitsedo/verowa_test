@@ -1,0 +1,49 @@
+{
+    "name": "checkitsedo/verowa-test",
+    "type": "typo3-cms-extension",
+    "description": "This extension connects to the Verowa API. To use it in your Typo3 project, you need a Verowa instance and an API key.\n\nVerowa is a Swiss organization tool for parishes. Verowa connects your team, manages your rooms and equipment, helps you plan events like church services or meetings and organizes your advertising, service weeks and much more. Verowa informs you about changes and keeps your website up to date with this plugin.\n\nTranslated with www.DeepL.com\\\\\\/Translator (free version)",
+    "authors": [
+        {
+            "name": "Dominik Senti",
+            "role": "Developer"
+        }
+    ],
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "typo3/cms-core": "^10.4",
+        "cobweb/external_import": "^6.3",
+        "cobweb/svconnector_json": "^3.0"
+    },
+    "require-dev": {
+        "typo3/testing-framework": "^6.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Checkitsedo\\VerowaTest\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Checkitsedo\\VerowaTest\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "typo3-ter/verowa-test": "self.version"
+    },
+    "config": {
+        "vendor-dir": ".Build/vendor",
+        "bin-dir": ".Build/bin"
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "TYPO3\\TestingFramework\\Composer\\ExtensionTestEnvironment::prepare"
+        ]
+    },
+    "extra": {
+        "typo3/cms": {
+            "cms-package-dir": "{$vendor-dir}/typo3/cms",
+            "web-dir": ".Build/public",
+            "extension-key": "verowa_test"
+        }
+    }
+}
