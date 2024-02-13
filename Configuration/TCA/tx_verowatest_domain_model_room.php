@@ -25,7 +25,7 @@ return [
 			0 => [
 				'connector' => 'json',
 				'parameters' => [
-					'uri' => 'https://api.verowa.ch/geteventdetails/stjosef-zuerich/1ad89c27e1a89ef6aa34f34e4adf7448/0',
+					'uri' => 'https://api.verowa.ch/getrooms/stjosef-zuerich/1ad89c27e1a89ef6aa34f34e4adf7448',
 					'encoding' => 'utf-8',
 					'headers' => [
 						'User-Agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:75.0) Gecko/20100101 Firefox/75.0',
@@ -33,7 +33,6 @@ return [
 					],
 				],
 				'data' => 'array',
-				'arrayPath' => 'rooms/*',
 				'referenceUid' => 'id',
 				'group' => 'stjoseftest',
 				'priority' => 10,
