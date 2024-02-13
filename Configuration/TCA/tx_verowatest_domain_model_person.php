@@ -35,7 +35,7 @@ return [
 				'data' => 'array',
 				'arrayPath' => 'organizer',
 				'referenceUid' => 'person_id',
-				'group' => 'stjosef',
+				'group' => 'stjoseftest',
 				'priority' => 10,
 				'description' => 'Import of all events from Verowa'
 			],
