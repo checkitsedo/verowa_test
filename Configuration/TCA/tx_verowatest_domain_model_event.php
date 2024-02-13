@@ -304,9 +304,9 @@ return [
 				],
 			],
 		],
-		'coorganizers' => [
+		'organists' => [
 			'exclude' => true,
-			'label' => 'Co-Organizers',
+			'label' => 'Organists',
 			'config' => [
 				'type' => 'group',
 				'allowed' => 'tx_verowatest_domain_model_person',
